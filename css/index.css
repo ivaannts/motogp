@@ -327,6 +327,10 @@ body {
     display: block;
   }
 
+  .video video {
+    width: 90%;
+  }
+
   .footer {
     display: none;
   }
