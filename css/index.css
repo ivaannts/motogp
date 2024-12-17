@@ -1,0 +1,480 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 70px;
+  background-color: bla;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.header .contenidoheader {
+  background-color: black;
+  width: 100%;
+  height: 69px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1px;
+}
+
+.header .contenidoheader img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.contenedornavbar {
+  position: relative;
+}
+.navbar {
+  font-family: "MotoGP Text";
+  background-color: black;
+  display: flex;
+  flex-direction: row; /* Por defecto, horizontal para ordenadores */
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.enlaces {
+  display: flex;
+  flex-direction: row;
+  justify-self: left;
+}
+
+.enlaces a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  margin: 0 10px;
+}
+
+.logo {
+  padding-top: 15px;
+}
+
+.logo img {
+  height: 19px;
+}
+
+.sinboton {
+  display: flex;
+}
+
+.conboton {
+  display: none; /* Ocultamos el botón en pantallas grandes */
+}
+
+.navbar a:hover {
+  color: red;
+}
+
+/* Estilos generales para el botón */
+.conboton button {
+  background-color: inherit;
+  border: none;
+  padding: 15px 16px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+.conboton {
+  position: relative;
+}
+
+.conboton button img {
+  height: 45px;
+  width: 45px;
+}
+
+/* Estilos para el contenido desplegable */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  /* Añadido para mejorar la accesibilidad */
+
+  top: 100%; /* Posiciona la parte superior del menú debajo del botón */
+}
+
+/* Mostrar el contenido desplegable al pasar el ratón sobre el botón */
+.conboton:hover .dropdown-content {
+  display: block;
+}
+
+/* Estilos para los enlaces dentro del menú desplegable */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  display: block;
+  color: red;
+  background-color: #f1f1f1;
+}
+
+.contenidohome{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulohome {
+  font-family: "MotoGP Text";
+  display: flex;
+  flex-direction: row;
+}
+
+.titulohome img {
+  padding-top: 23px;
+  padding-left: 5px;
+  height: 45px;
+}
+
+.titulohome h1 {
+  size: 18px;
+}
+
+.imagenhome{
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),  /* Color negro con opacidad del 50% */
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('../imagenes/personalizar/marquezymartin.jpg'); /* La imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
+
+.imagenhome img{
+  opacity: 75%;
+  margin: auto;
+  padding: 3.5%;
+  width: 50vw;
+  height: auto;
+}
+
+.mensajehome{
+  padding-left: 20px;
+}
+
+.enlacespaginas{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  flex: 1;
+  background-color: black;
+}
+
+.infohome{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.informacion{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  border: 0.5px solid rgba(75, 75, 75, 0.658);
+    background-color: white;
+    padding: 3%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+#equiposypilotos{
+  flex-direction: row-reverse;
+}
+
+#equiposypilotos .textoinfo{
+  padding-left: 20px;
+}
+
+.textoinfo{
+    font-family: 'MotoGP Text';
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    margin: auto;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column ;
+    width: 70%;
+}
+
+
+.imageninfo img{
+  width: 40vw;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.video video {
+  width: 60%;
+}
+
+.footer {
+  font-family: "MotoGP Text";
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5dc; 
+  justify-content: center;
+}
+
+.copyright{
+  align-self: flex-end;
+}
+
+.footer p{
+  margin: 0;
+  padding: 12px;
+  color: rgb(100, 100, 100);
+}
+
+.nombreredes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-gap: 20px; 
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.nombreredes a {
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.iconoredes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  padding-top: 10px;
+}
+
+.iconoredes .icono img {
+  height: 40px;
+  width: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+.footermovil {
+  display: none;
+  flex-direction: column;
+}
+
+.iconofooter {
+  padding: 5px;
+}
+
+.iconofooter img {
+  height: 40px;
+  width: 40px;
+  display: block;
+  margin: 0 auto; 
+}
+
+@media screen and (max-width: 500px) and (min-width: 300px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .logo {
+    margin-top: 15px;
+  }
+
+  .logo img {
+    height: 15px;
+  }
+
+  .sinboton {
+    display: none; 
+  }
+
+  .conboton {
+    display: flex;
+    justify-content: center;
+  }
+  .conboton button {
+    display: block;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .contenidohome img{
+    height: 25px;
+  }
+  .contenidohome h1{
+    padding-top: 3px;
+    font-size: 24px;
+  }
+
+  .imagenhome img{
+    width: 70vw;
+    height: auto;
+  }
+
+  .informacion{
+    justify-items: center;
+    flex-direction: column-reverse;
+  }
+
+  #equiposypilotos .informacion{
+    flex-direction: column;
+  }
+
+  .textoinfo{
+    padding-right: 0;
+  }
+
+  .imageninfo img{
+    width: 50vw;
+    height: auto;
+  }
+
+  .nombreredes,
+  .iconoredes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footermovil {
+    background-color: #f5f5dc;
+    display: flex;
+  }
+  .iconofooter img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1375px) {
+  .nombreredes {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: "MotoGP Text";
+  src: url("../tipoletra/MotoGPText-Light.eot");
+  src: local("MotoGP Text Light"), local("MotoGPText-Light"),
+    url("../tipoletra/MotoGPText-Light.eot?#iefix") format("embedded-opentype"),
+    url("../tipoletra/MotoGPText-Light.woff2") format("woff2"),
+    url("../tipoletra/MotoGPText-Light.woff") format("woff"),
+    url("../tipoletra/MotoGPText-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MotoGP Text";
+  src: url("../tipoletra/MotoGPText-Italic.eot");
+  src: local("MotoGP Text Italic"), local("MotoGPText-Italic"),
+    url("../tipoletra/MotoGPText-Italic.eot?#iefix") format("embedded-opentype"),
+    url("../tipoletra/MotoGPText-Italic.woff2") format("woff2"),
+    url("../tipoletra/MotoGPText-Italic.woff") format("woff"),
+    url("../tipoletra/MotoGPText-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MotoGP Text";
+  src: url("../tipoletra/MotoGPText-Bold.eot");
+  src: local("MotoGP Text Bold"), local("MotoGPText-Bold"),
+    url("../tipoletra/MotoGPText-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../tipoletra/MotoGPText-Bold.woff2") format("woff2"),
+    url("../tipoletra/MotoGPText-Bold.woff") format("woff"),
+    url("../tipoletra/MotoGPText-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MotoGP Text";
+  src: url("../tipoletra/MotoGPText-BoldItalic.eot");
+  src: local("MotoGP Text Bold Italic"), local("MotoGPText-BoldItalic"),
+    url("../tipoletra/MotoGPText-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../tipoletra/MotoGPText-BoldItalic.woff2") format("woff2"),
+    url("../tipoletra/MotoGPText-BoldItalic.woff") format("woff"),
+    url("../tipoletra/MotoGPText-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MotoGP Text";
+  src: url("../tipoletra/MotoGPText-LightItalic.eot");
+  src: local("MotoGP Text Light Italic"), local("MotoGPText-LightItalic"),
+    url("../tipoletra/MotoGPText-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../tipoletra/MotoGPText-LightItalic.woff2") format("woff2"),
+    url("../tipoletra/MotoGPText-LightItalic.woff") format("woff"),
+    url("../tipoletra/MotoGPText-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MotoGP Text";
+  src: url("../tipoletra/MotoGPText-Regular.eot");
+  src: local("MotoGP Text Regular"), local("MotoGPText-Regular"),
+    url("../tipoletra/MotoGPText-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../tipoletra/MotoGPText-Regular.woff2") format("woff2"),
+    url("../tipoletra/MotoGPText-Regular.woff") format("woff"),
+    url("../tipoletra/MotoGPText-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MotoGP Display";
+  src: url("../tipoletra/MotoGPDisplay-Bold.eot");
+  src: local("MotoGP Display Bold"), local("MotoGPDisplay-Bold"),
+    url("../tipoletra/MotoGPDisplay-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../tipoletra/MotoGPDisplay-Bold.woff2") format("woff2"),
+    url("../tipoletra/MotoGPDisplay-Bold.woff") format("woff"),
+    url("../tipoletra/MotoGPDisplay-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

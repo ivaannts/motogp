@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/contacto.css" />
+    <!-- Icono que aparece en la pestaña del navegador -->
+    <link rel="icon" href="../imagenes/personalizar/motogp-icon.jpg" />
+  </head>
+
+  <body>
+    <!-- Contenedor que contiene el título de la página -->
+    <div class="header">
+      <div class="contenidoheader">
+        <!-- Imagen con el eslogan de la página -->
+        <img src="../imagenes/personalizar/eslogan.png" alt="eslogan" />
+      </div>
+    </div>
+
+    <!-- Contenedor que contiene la barra de navegación de la página -->
+    <div class="navbar">
+      <!-- Logo de la página que redirige a la página principal -->
+      <a class="logo" href="../index.html">
+        <b>
+          <img src="../imagenes/personalizar/logomotogp.jpg" alt="motogp" />
+        </b>
+      </a>
+
+      <!-- Enlaces de navegación que se muestran en el menú -->
+      <div class="enlaces">
+        <div class="sinboton">
+          <!-- Enlaces principales del sitio -->
+          <a href="../html/circuitos.html"><b>CIRCUITOS</b></a>
+          <a href="../html/equiposypilotos.html"><b>EQUIPOS Y PILOTOS</b></a>
+          <a href="../html/pilotoshistoricos.html"><b>PILOTOS HISTÓRICOS</b></a>
+          <a href="../html/contacto.html"><b>CONTACTO</b></a>
+        </div>
+
+        <!-- Menú desplegable para dispositivos móviles -->
+        <div class="conboton">
+          <!-- Botón que activa el menú desplegable -->
+          <button aria-haspopup="true" aria-expanded="false">
+            <img src="../imagenes/personalizar/menu.png" alt="menu" />
+          </button>
+          <div class="dropdown-content">
+            <!-- Enlaces dentro del menú desplegable -->
+            <a href="../html/circuitos.html"><b>CIRCUITOS</b></a>
+            <a href="../html/equiposypilotos.html"><b>EQUIPOS Y PILOTOS</b></a>
+            <a href="../html/pilotoshistoricos.html"><b>PILOTOS HISTÓRICOS</b></a>
+            <a href="../html/contacto.html"><b>CONTACTO</b></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de contacto -->
+    <div class="contacto">
+      <div class="contenedor-contacto">
+        <!-- Título de la sección de contacto -->
+        <h1>
+          <img src="../imagenes/personalizar/widget-header.png" alt="widget-header" />
+          CONTÁCTANOS
+        </h1>
+        <!-- Formulario de contacto -->
+        <form>
+          <div class="formulario">
+            <!-- Campo para ingresar el nombre -->
+            <div>
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+            <!-- Campo para ingresar los apellidos -->
+            <div>
+              <label for="apellido">Apellidos</label>
+              <input type="text" id="apellido" name="apellido" required />
+            </div>
+          </div>
+
+          <!-- Campo para ingresar el correo electrónico -->
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required />
+          <!-- Campo de texto para ingresar el mensaje -->
+          <label for="mensaje">Escribe un mensaje</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+
+          <!-- Contenedor para el botón de envío -->
+          <div class="submit-container">
+            <button type="submit">Enviar</button>
+            <!-- Mensaje que se muestra después de enviar el formulario -->
+            <p class="thank-you">¡Gracias por tu mensaje!</p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Sección de pie de página (footer) -->
+    <div class="footer">
+      <div class="nombreredes">
+        <!-- Enlaces a redes sociales -->
+        <a href="https://www.youtube.com/@motogp"><b>Youtube</b></a>
+        <a href="https://www.instagram.com/motogp/"><b>Instagram</b></a>
+        <a href="https://x.com/MotoGP?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><b>X</b></a>
+        <a href="https://www.tiktok.com/@motogp"><b>TikTok</b></a>
+      </div>
+
+      <div class="iconoredes">
+        <!-- Iconos de redes sociales con enlaces -->
+        <a class="icono" href="https://www.youtube.com/@motogp">
+          <img src="../imagenes/redes/youtubelogo.jpg" alt="youtube" />
+        </a>
+        <a class="icono" href="https://www.instagram.com/motogp/">
+          <img src="../imagenes/redes/instagramlogo.png" alt="instagram" />
+        </a>
+        <a class="icono" href="https://x.com/MotoGP?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+          <img src="../imagenes/redes/xlogo.png" alt="x" />
+        </a>
+        <a class="icono" href="https://www.tiktok.com/@motogp">
+          <img src="../imagenes/redes/tiktoklogo.png" alt="tiktok" />
+        </a>
+      </div>
+      <!-- Mensaje de copyright -->
+      <div class="copyright">
+        <p>&copy; Iván Torres Sierra</p>
+      </div>
+    </div>
+
+    <!-- Pie de página para móviles (versión reducida) -->
+    <div class="footermovil">
+      <div class="iconofooter">
+        <a href="https://www.youtube.com/@motogp">
+          <img src="../imagenes/redes/youtubelogo.jpg" alt="youtube" />
+        </a>
+      </div>
+      <div class="iconofooter">
+        <a href="https://www.instagram.com/motogp/">
+          <img src="../imagenes/redes/instagramlogo.png" alt="instagram" />
+        </a>
+      </div>
+      <div class="iconofooter">
+        <a href="https://x.com/MotoGP?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+          <img src="../imagenes/redes/xlogo.png" alt="x" />
+        </a>
+      </div>
+      <div class="iconofooter">
+        <a href="https://www.tiktok.com/@motogp">
+          <img src="../imagenes/redes/tiktoklogo.png" alt="tiktok" />
+        </a>
+      </div>
+      <!-- Copyright también en la versión móvil -->
+      <div class="copyright">
+        <p>&copy; Iván Torres Sierra</p>
+      </div>
+    </div>
+  </body>
+</html>
